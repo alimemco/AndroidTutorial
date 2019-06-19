@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ActivitySession3">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="See logCat :)"/>
+
 </android.support.constraint.ConstraintLayout>

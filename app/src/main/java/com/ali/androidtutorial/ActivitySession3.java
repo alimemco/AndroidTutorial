@@ -19,7 +19,7 @@ public class ActivitySession3 extends AppCompatActivity {
 
             Log.i(TAG, " قبول ");
 
-        }else if(example > 20 && example < 0 ){
+        }else if(example > 20 || example < 0 ){
             Log.i(TAG, " خارج از محدوده ");
         }
 
