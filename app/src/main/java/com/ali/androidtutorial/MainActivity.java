@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.main_activity_btn_lsnFour:
-                Toast.makeText(this, "Four", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, ActivitySession4.class));
                 break;
         }
         
