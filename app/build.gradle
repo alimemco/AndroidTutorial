@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "47.0.0"
+
     defaultConfig {
         applicationId "com.ali.androidtutorial"
         minSdkVersion 16

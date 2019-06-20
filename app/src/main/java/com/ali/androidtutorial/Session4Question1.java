@@ -11,7 +11,7 @@ public class Session4Question1 extends AppCompatActivity {
 
     EditText edOne , edTwo;
     Button btn;
-    TextView textView;
+    TextView areaTv,envTv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,19 +20,24 @@ public class Session4Question1 extends AppCompatActivity {
         edOne = findViewById(R.id.session4questionEd1);
         edTwo = findViewById(R.id.session4questionEd2);
         btn = findViewById(R.id.session4questionBtn);
-        textView = findViewById(R.id.session4questionTv);
+        areaTv = findViewById(R.id.session4questionTv);
+        envTv = findViewById(R.id.session4questionTv2);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (edOne.getText() != null && edTwo.getText() != null){
 
-                    int t = Integer.parseInt(edOne.getText().toString());
-                    int a = Integer.parseInt(edTwo.getText().toString());
+                    if (!edOne.getText().toString().equals("") && !edTwo.getText().toString().equals("")) {
+                        int t = Integer.parseInt(edOne.getText().toString());
+                        int a = Integer.parseInt(edTwo.getText().toString());
 
-                    int res = ( t + a ) * 2 ;
+                        int env = (t + a) * 2;
+                        int area = t * a;
 
-                    textView.setText(String.valueOf(res));
+                        areaTv.setText(String.valueOf(env));
+                        envTv.setText(String.valueOf(area));
+                    }
                 }
 
 

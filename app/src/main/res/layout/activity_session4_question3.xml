@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Session4Question3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="نمره درس فیزیک ، ریاضی و زیست را دریافت کند
+اگر از 9 و 10 باشند نمایش دهد نیاز به کمک.
+اگر بین 12 تا 20 باشد نمایش دهد قبول.
+اگر کوچکتر از 10 باشند نمایش دهد مردود.
+حاصل جمع را نمایش دهد.
+میانگین را نمایش دهد.
+بیشترین نمره و کمترین نمره را نمایش دهد.
+اگر میانگین بزرگتر از 10 نباشد پیغام دهد ضعیف(از !(Not)  استفاده شود)"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/session4question3EdTxFiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="نمره فیزیک"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/session4question3EdTxRia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="نمره ریاضی"
+
+            android:inputType="number"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/session4question3EdTxZis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="نمره زیست"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/session4question3TvFiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="نمره "
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/session4question3TvRia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="نمره"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/session4question3TvZis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="نمره "
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/session4question3Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#E91E63"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:text="محاسبه"/>
+
+    <TextView
+        android:id="@+id/session4question3TvPlus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="حاصل جمع"/>
+
+    <TextView
+        android:id="@+id/session4question3TvRes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="میانگین"/>
+
+    <TextView
+        android:id="@+id/session4question3TvMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="بیشترین نمره"/>
+
+    <TextView
+        android:id="@+id/session4question3TvMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="کمترین نمره"/>
+
+
+    <TextView
+        android:id="@+id/session4question3TvLast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="مجموع"/>
+
+
+
+
+</LinearLayout>

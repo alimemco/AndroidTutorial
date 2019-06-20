@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,42 +14,27 @@
         android:gravity="center"
         android:text="طول و عرض مستطیل را دریافت نماید سپس محیط و مساحت آن را بدست آورد."/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/session4questionEd1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:inputType="number"
-            android:hint="طول"/>
-
-        <EditText
-            android:id="@+id/session4questionEd2"
-            android:layout_width="0dp"
+            android:id="@+id/session4question2Ed1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:gravity="center"
-            android:layout_weight="1"
             android:inputType="number"
-            android:hint="عرض"/>
+            android:hint="شعاع دایره"/>
 
-    </LinearLayout>
 
 
     <Button
-        android:id="@+id/session4questionBtn"
+        android:id="@+id/session4question2Btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="7dp"
         android:textSize="25sp"
-        android:textColor="#2196F3"
+        android:background="#5C6BC0"
+        android:textColor="#ffffff"
         android:text="محاسبه"/>
 
     <LinearLayout
@@ -60,14 +44,12 @@
 
 
         <TextView
-            android:id="@+id/session4questionTv"
+            android:id="@+id/session4question2Tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="25sp"
             android:gravity="center"
-            android:background="#64B5F6"
-            android:textColor="#ffffff"
             android:layout_weight="1"
             android:layout_margin="20dp"
             android:text="نتیجه"/>
@@ -80,7 +62,7 @@
             android:gravity="center"
             android:layout_weight="1"
             android:layout_margin="20dp"
-            android:text="مساحت مستطیل"/>
+            android:text="محیط دایره"/>
 
 
     </LinearLayout>
@@ -92,14 +74,12 @@
 
 
         <TextView
-            android:id="@+id/session4questionTv2"
+            android:id="@+id/session4question2Tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="25sp"
             android:gravity="center"
-            android:background="#64B5F6"
-            android:textColor="#ffffff"
             android:layout_weight="1"
             android:layout_margin="20dp"
             android:text="نتیجه"/>
@@ -112,7 +92,7 @@
             android:gravity="center"
             android:layout_weight="1"
             android:layout_margin="20dp"
-            android:text="محیط مستطیل"/>
+            android:text="مساحت دایره"/>
 
 
     </LinearLayout>
