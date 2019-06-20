@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Session4Question5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text=" برنامه ای که چهار CheckBox داشته باشد
+در هر لحظه فقط یک CheckBox فعال باشد.(یعنی کاری کنید که CheckBox ها شبیه RadioButton رفتار کنند)"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/session4question5chbJava"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Java"/>
+
+        <CheckBox
+            android:id="@+id/session4question5chbPython"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Python"/>
+
+        <CheckBox
+            android:id="@+id/session4question5chbPhp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Php"/>
+
+        <CheckBox
+            android:id="@+id/session4question5chbKotlin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kotlin"/>
+
+    </LinearLayout>
+
+</LinearLayout>
