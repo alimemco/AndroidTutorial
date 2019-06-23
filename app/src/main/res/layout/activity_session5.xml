@@ -11,10 +11,20 @@
         android:id="@+id/as5TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0123456789"
+        tools:text="0123456789"
         android:textSize="30sp"
         android:gravity="center"
         android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/as5TextViewIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="0123456789"
+
+        android:textSize="30sp"
+        android:gravity="center"
+/>
 
     <TableLayout
         android:layout_width="match_parent"
@@ -142,10 +152,10 @@
                 android:background="#E3F2FD"/>
 
             <Button
-                android:id="@+id/as5BtnDot"
+                android:id="@+id/as5BtnClear"
                 android:layout_height="match_parent"
-                android:text="."
-                android:textSize="30sp"
+                android:text="clear"
+                android:textSize="17sp"
                 android:background="#F3E5F5"/>
 
 
