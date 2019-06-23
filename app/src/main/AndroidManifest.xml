@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Session4Question6"></activity>
+        <activity android:name=".ActivitySession5"></activity>
+        <activity android:name=".Session4Question6" />
         <activity android:name=".Session4Question5" />
         <activity android:name=".Session4Question4" />
         <activity android:name=".Session4Question3" />

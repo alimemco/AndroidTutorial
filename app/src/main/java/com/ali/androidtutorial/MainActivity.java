@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     
-    private Button btnLsnFour,btnLsnTwo,btnLsnThree;
+    private Button btnLsnTwo,btnLsnThree,btnLsnFour,btnLsnFive;
     
     private static final String TAG = "MainActivityEx";
     @Override
@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnLsnTwo = findViewById(R.id.main_activity_btn_lsnTwo);
         btnLsnThree = findViewById(R.id.main_activity_btn_lsnThree);
         btnLsnFour = findViewById(R.id.main_activity_btn_lsnFour);
+        btnLsnFive = findViewById(R.id.main_activity_btn_lsnFive);
 
         btnLsnFour.setOnClickListener(this);
         btnLsnTwo.setOnClickListener(this);
         btnLsnThree.setOnClickListener(this);
-        
+        btnLsnFive.setOnClickListener(this);
+
 
 
     }
@@ -47,6 +49,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.main_activity_btn_lsnFour:
                 startActivity(new Intent(MainActivity.this, ActivitySession4.class));
+                break;
+
+            case R.id.main_activity_btn_lsnFive:
+                startActivity(new Intent(MainActivity.this, ActivitySession5.class));
                 break;
         }
         
